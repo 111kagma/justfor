@@ -144,6 +144,56 @@
         button:hover {
             background-color: #218838;
         }
+        /* ファーストビュー（ヒーローセクション）のスタイル */
+#hero {
+    height: 100vh; /* ビューポート全体の高さを占める */
+    background-image: url('/img/fv.png'); /* 適切な背景画像を指定 */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 背景画像に半透明のオーバーレイを追加 */
+    z-index: -1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #218838;
+}
+
     </style>
 </head>
 
@@ -158,7 +208,13 @@
             </ul>
         </nav>
     </header>
-
+    <section id="hero">
+        <div class="hero-content">
+            <h1>夢を叶える第一歩はここから</h1>
+            <p>Guddyであなたの夢を体験しよう。あなたのストーリーがここで始まる。</p>
+            <a href="#jobs" class="cta-btn">夢を探す</a>
+        </div>
+    </section>
     <section id="about">
         <h2>夢を叶える時 - Guddyが届ける特別な体験</h2>
         <p>あの日、あの時、叶えたかった夢。それは叶えたいけど、現実的には叶えられない夢で、実際にやってみたいけど、やる場所がない。そんな夢をここで見つけてほしい。<br>
@@ -194,17 +250,17 @@
         <form>
             <div class="form-group">
                 <label for="name">名前:</label>
-                <input type="text" id="name" name="name" required="">
+                <input type="text" id="name" name="name" required>
             </div>
 
             <div class="form-group">
                 <label for="email">メールアドレス:</label>
-                <input type="email" id="email" name="email" required="">
+                <input type="email" id="email" name="email" required>
             </div>
 
             <div class="form-group">
                 <label for="skills">スキル:</label>
-                <textarea id="skills" name="skills" placeholder="自分のスキルや得意なことを記入してください" required=""></textarea>
+                <textarea id="skills" name="skills" placeholder="自分のスキルや得意なことを記入してください" required></textarea>
             </div>
 
             <button type="submit">プロフィールを作成</button>
@@ -213,10 +269,8 @@
 
 
     <footer>
-        <p>© 2024 リアル仕事体験マッチングサイト</p>
+        <p>&copy; 2024 リアル仕事体験マッチングサイト</p>
     </footer>
-
-
 </body>
 
 </html>
