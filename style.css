@@ -1,16 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif; /* メインフォント */
-    background-color: #111; /* 背景色 */
-    color: #eee; /* 文字色 */
+    font-family: 'Playfair Display', serif;
+    background-color: #111;
+    color: #eee;
     text-align: center;
-    line-height: 1.8; /* 行間 */
+    line-height: 1.8;
 }
 
 h1, h2 {
-    font-family: 'Noto Sans JP', sans-serif; /* 日本語フォント */
-    font-weight: 600; /* フォントウェイト */
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
 }
 
 .first-view {
@@ -22,17 +22,19 @@ h1, h2 {
     justify-content: center;
     align-items: center;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
 
 .first-view h1 {
-    font-size: 3rem; /* 見出しサイズ */
+    font-size: 3rem;
     margin-bottom: 20px;
+    max-width: 90%;
 }
 
 .cta-button {
-    background-color: #D4AF37; /* ボタン背景色 */
-    color: #111; /* ボタン文字色 */
-    padding: 20px 40px; /* ボタンpadding */
+    background-color: #D4AF37;
+    color: #111;
+    padding: 15px 35px;
     font-size: 1.2rem;
     border: none;
     border-radius: 5px;
@@ -41,28 +43,29 @@ h1, h2 {
 }
 
 .cta-button:hover {
-    background-color: #C09030; /* ボタンホバー時背景色 */
+    background-color: #C09030;
 }
 
 .section {
-    padding: 100px 20px; /* セクションpadding */
-    background-color: #181818; /* セクション背景色 */
+    padding: 80px 20px;
+    background-color: #181818;
 }
 
 .brand-story, .exclusive, .ingredients, .testimonials, .purchase, .pricing, .faq {
-    background-color: transparent; /* セクション背景色を透明に */
+    background-color: transparent;
 }
 
 .brand-story h2, .exclusive h2, .ingredients h2, .testimonials h2, .purchase h2, .pricing h2, .faq h2 {
-    font-size: 2.5rem; /* 見出しサイズ */
-    margin-bottom: 30px;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
 }
 
 .brand-story p, .exclusive p, .ingredients p, .testimonials p, .purchase p, .pricing p, .faq p {
     font-size: 1.2rem;
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 auto;
     line-height: 1.8;
+    padding: 0 10px;
 }
 
 .first-view-image {
@@ -72,12 +75,89 @@ h1, h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* テキストより背面に配置 */
+    z-index: -1;
 }
 
 .section-image {
-    max-width: 50%; /* 画像の最大幅 */
+    max-width: 60%;
     height: auto;
-    margin: 20px auto; /* 中央揃え */
-    display: block; /* 画像をブロック要素にする */
+    margin: 30px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Testimonials セクション全体 */
+.testimonials-section {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+/* 画像部分（1行中央揃え） */
+.testimonials-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+  
+.testimonials-image img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 6px;
+}
+  
+/* タイトル（1行中央揃え） */
+.testimonials-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+  
+/* お声の部分（3つ並ぶ） */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+/* お声のカード */
+.testimonial-item {
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+    flex: 1;
+    max-width: 300px;
+    min-width: 250px;
+}
+  
+.testimonial-text {
+    font-size: 1em;
+    color: #eee;
+    line-height: 1.6;
+}
+  
+.testimonial-author {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #D4AF37;
+    font-weight: bold;
+    text-align: right;
+}
+  
+/* スマホ対応（1〜2列表示） */
+@media (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .testimonial-item {
+        max-width: 90%;
+    }
 }
