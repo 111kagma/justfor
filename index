@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just For - 唯一無二の酵素ドリンク</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="first-view">
+        <img src="img/FV.jpeg" alt="酵素ドリンクの原料となるフルーツ" class="first-view-image">
+        <h1>たった一人のために調合される、唯一無二の酵素ドリンク。</h1>
+        <button class="cta-button">申し込む（紹介コードが必要）</button>
+    </section>
+    
+    <section class="section brand-story">
+        <img src="img/sec1.jpeg" alt="Just For の開発者のストーリー" class="section-image">
+        <h2>Just For とは？</h2>
+        <p>市場には多くの健康食品があるが、どれも「万人向け」に作られている。しかし、人の体は千差万別。本当に必要なのは、「あなた専用」に設計されたもの。「選ぶ」ことすら不要な、完全オーダーメイドの酵素ドリンク、それが Just For。</p>
+    </section>
+    
+    <section class="section exclusive">
+        <img src="img/sec2.jpeg" alt="シリアルナンバーが刻印されたボトル" class="section-image">
+        <h2>完全紹介制の特別な体験</h2>
+        <p>Just For は完全紹介制。一般には手に入らない特別な酵素ドリンクです。<br>
+        1本1本がオーダーメイドで作られ、すべてにシリアルナンバーが刻印されます。</p>
+    </section>
+    
+    <section class="section ingredients">
+        <img src="img/sec3.jpeg" alt="使用されているフルーツやハーブ" class="section-image">
+        <h2>成分と効果</h2>
+        <p>Just For は、個人の体質や目的（健康、ダイエット、美容など）に合わせてブレンドされます。厳選された天然のフルーツやハーブを使用し、専門家の監修のもと、あなたに最適な配合を提供します。</p>
+    </section>
+    
+    <section class="section testimonials">
+        <img src="img/sec5.jpeg" alt="Just For を利用している人" class="section-image">
+        <h2>実際のユーザーの声・体験談</h2>
+        <p>「飲み続けて1ヶ月で、朝の目覚めが変わった。」</p>
+        <p>「ダイエットに成功し、肌の調子も良くなった！」</p>
+        <p>「オーダーメイドだから、安心して続けられる。」</p>
+    </section>
+    
+    <section class="section purchase">
+        <img src="img/sec4.jpeg" alt="紹介コード" class="section-image">
+        <h2>購入方法</h2>
+        <p>Just For は完全紹介制です。<br>紹介コードをお持ちの方のみ、お申し込みいただけます。</p>
+    </section>
+    
+    <section class="section pricing">
+        <img src="https://source.unsplash.com/featured/?product-pricing" alt="製品のボトルと価格" class="section-image">
+        <h2>価格・購入リンク</h2>
+        <p>1本（600ml）：12,000円（税込）<br>「高級ホテルのスパ1回分の価格で、毎日続けられる健康を」</p>
+        <button class="cta-button">紹介コードを入力して申し込む</button>
+    </section>
+    
+    <section class="section faq">
+        <img src="img/FAQ.jpeg" alt="質問" class="section-image">
+        <h2>よくある質問（FAQ）</h2>
+        <p><strong>Q: 本当に私に合ったものが作れますか？</strong><br>A: 事前カウンセリングを通じて、あなたの体質や目的に合わせた調合を行います。</p>
+        <p><strong>Q: 飲み方や保存方法は？</strong><br>A: 冷蔵庫で保存し、毎日適量をお飲みください。</p>
+        <p><strong>Q: いつ飲むのが効果的？</strong><br>A: 朝食前や就寝前が特におすすめです。</p>
+    </section>
+</body>
+</html>
