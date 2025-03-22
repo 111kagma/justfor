@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif; /* メインフォント */
+    background-color: #111; /* 背景色 */
+    color: #eee; /* 文字色 */
+    text-align: center;
+    line-height: 1.8; /* 行間 */
+}
+
+h1, h2 {
+    font-family: 'Noto Sans JP', sans-serif; /* 日本語フォント */
+    font-weight: 600; /* フォントウェイト */
+}
+
+.first-view {
+    position: relative;
+    height: 100vh;
+    background: url('img/background.jpeg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.first-view h1 {
+    font-size: 3rem; /* 見出しサイズ */
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #D4AF37; /* ボタン背景色 */
+    color: #111; /* ボタン文字色 */
+    padding: 20px 40px; /* ボタンpadding */
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #C09030; /* ボタンホバー時背景色 */
+}
+
+.section {
+    padding: 100px 20px; /* セクションpadding */
+    background-color: #181818; /* セクション背景色 */
+}
+
+.brand-story, .exclusive, .ingredients, .testimonials, .purchase, .pricing, .faq {
+    background-color: transparent; /* セクション背景色を透明に */
+}
+
+.brand-story h2, .exclusive h2, .ingredients h2, .testimonials h2, .purchase h2, .pricing h2, .faq h2 {
+    font-size: 2.5rem; /* 見出しサイズ */
+    margin-bottom: 30px;
+}
+
+.brand-story p, .exclusive p, .ingredients p, .testimonials p, .purchase p, .pricing p, .faq p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.first-view-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* テキストより背面に配置 */
+}
+
+.section-image {
+    max-width: 50%; /* 画像の最大幅 */
+    height: auto;
+    margin: 20px auto; /* 中央揃え */
+    display: block; /* 画像をブロック要素にする */
+}
